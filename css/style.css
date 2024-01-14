@@ -273,10 +273,10 @@ header {
 }
 
 nav {
-  width: 30%;
+  width: 35%;
 }
 
-#nav-title {
+.nav-title {
   margin-right: auto;
   font-size: 1.5em;
   color: white;
