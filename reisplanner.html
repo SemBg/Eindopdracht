@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Naam bedrijf </title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/travelplanner.css">
 
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
@@ -20,7 +21,6 @@
 </head>
 
 <body>
-<!-- TODO: Import navbar and footer from file -->
   <header>
     <div class="nav-title">
       <img style="margin-right: 10px" src="img/car-transparent.png" width="75px" />
@@ -36,47 +36,45 @@
     </nav>
   </header>
 
-  <video autoplay muted loop>
-    <source src="videos/Background_video.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 
-  <div class="container">
-    <div class="image">
-      <img class="container-image" src="img/car-transparent.png" alt="logo"/>
+  <main>
+    <div>
+      <h1>Waar naartoe?</h1>
+      <form action="./planner.html">
+        <div>
+          <input class="search-text-input" type="text" name="destination" placeholder="Jouw eindbestemming">
+          <button type="submit" class="search-button">Plan uw reis</button>
+        </div>
+      </form>
     </div>
-    <div class="container-text">
-      <h1>Wat doen wij?</h1>
-      <p class="text">Inhoud</p>
-    </div>
-  </div>
 
-  <div class="container" style="background-color: white">
-    <div class="container-text">
-      <h1>Milieu bewust</h1>
-      <p class="text">Inhoud</p>
+    <div class="container">
+      <h2>Vindt jouw fantasie bestemming!</h2>
+      <div class="travel-card-list">
+        <a href="./planner.html" class="travel-card" style="background-image: url('./img/paris.jpg');">
+            <h3>Parijs</h3>
+        </a>
+        <a class="travel-card" style="background-image: url('./img/paris.jpg');">
+          <h3>Parijs</h3>
+        </a>
+        <a class="travel-card" style="background-image: url('./img/paris.jpg');">
+          <h3>Parijs</h3>
+        </a>
+        <a class="travel-card" style="background-image: url('./img/paris.jpg');">
+          <h3>Parijs</h3>
+        </a>
+        <a class="travel-card" style="background-image: url('./img/paris.jpg');">
+          <h3>Parijs</h3>
+        </a>
+        <a class="travel-card" style="background-image: url('./img/paris.jpg');">
+          <h3>Parijs</h3>
+        </a>
+      </div>
     </div>
-    <div class="image">
-      <img class="container-image" src="img/car-transparent.png" style="background-color: var(--background-color)" alt="logo"/>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="image">
-      <img class="container-image" src="img/car-transparent.png" alt="logo"/>
-    </div>
-    <div class="container-text">
-      <h1>Word partner</h1>
-      <p class="text">Goed nieuws! Klinkt dit allemaal als muziek in uw oren? Dan kunt u zich nu aansluiten bij ons alsmaar groeiende netwerk als partner!</p>
-      <button>Klik hier om partner te worden!</button>
-    </div>
-  </div>
-
-<!-- TODO: Import navbar and footer from file -->
-  <footer>
-    footer inhoud
-  </footer>
+  </main>
 
   <script src="js/app.js"></script>
 
 </body>
+
+</html>
