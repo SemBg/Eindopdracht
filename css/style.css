@@ -258,7 +258,7 @@ textarea {
 body {
   background-color: var(--background-color);
   margin: 0;
-  overflow: hidden; /* Prevent default body margin/padding and ensure full viewport usage */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 header {
@@ -303,4 +303,42 @@ video {
   height: 100%;
   object-fit: cover;
   z-index: -1; /* Ensure the video appears below other elements */
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  padding: 150px 100px 150px 100px;
+  align-items: center;
+}
+
+.image {
+  flex: 50%;
+  max-width: 50%;
+}
+
+.container-text {
+  flex: 45%;
+  max-width: 45%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 70%;
+  background-color: white;
+  padding: 100px 50px 100px 50px;
+  border-radius: 50px;
+}
+
+.text {
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
 }
