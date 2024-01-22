@@ -25,7 +25,9 @@ h1 {
 }
 
 .container {
+  display: block !important;
   width: 80vw;
+  padding: 0 !important;
   margin: 0 auto;
   margin-top: 20px;
 }
