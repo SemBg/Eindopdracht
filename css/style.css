@@ -331,11 +331,11 @@ video {
 
 .container-text.left {
   margin-left: 9%;
-} 
+}
 
 .container-text.right {
   margin-right: 9%;
-} 
+}
 
 .container-image {
   width: 50%;
@@ -366,5 +366,6 @@ h1 {
 }
 
 footer {
-  padding-bottom: 20px;
+  background-color: white;
+  padding: 20px 0 20px 0;
 }
