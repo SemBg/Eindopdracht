@@ -14,6 +14,18 @@ h1 {
   gap: 10px;
 }
 
+.destination-card-inner {
+  width:-webkit-fill-available; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-around;
+}
+
+.destination-card-list h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
 .destination-card-list > div {
   border: 2px solid gray;
   display: flex;
@@ -21,9 +33,27 @@ h1 {
 }
 
 .destination-card-list div img {
-  width: 35%;
-  height: 250px;
+  min-width: 35%;
+  height: 350px;
   object-fit: cover;
+}
+
+.destination-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.destination-card-time {
+  font-weight: 900;
+  font-size: 35px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.destination-card-date {
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-weight: 600;
 }
 
 .container {
@@ -33,3 +63,66 @@ h1 {
   margin: 0 auto;
   margin-top: 20px;
 }
+.steps {
+  width: 60%;
+  height: 50px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.steps .progress-line {
+  top: 50%;
+  left: 5%;
+  position: absolute;
+  background-color: #cdcfd3;
+  width: -webkit-fill-available;
+  height: 2px;
+  z-index: 10;
+}
+
+.steps .circle {
+  width:20px;
+  height:20px;
+  border-radius:250px;
+  border: 2px solid #cecece;
+  background:#fff;
+  text-align: center;
+  position: absolute;
+  top: -30%;
+  z-index: 20;
+}
+
+.steps .inner-circle {
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  position: absolute;
+  top: 12% !important;
+  left: 10% !important;
+  border: 0;
+}
+
+.steps .step-id {
+  color: #6a6c6f;
+  font-size: 90%;
+  text-align: center;
+}
+
+.steps .list-inline li {
+  width: 33%;
+  position: relative;
+  padding: 13px 0 0 0;
+  margin: 0;
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+}
+
+.steps .list-inline { margin: 0; padding: 0; }
+.steps .list-inline li.first .circle { left: -10%; }
+.steps .list-inline li.middle .circle { left: 43%; }
+.steps .list-inline li.last .circle { right: -10%; }
+.steps .list-inline li.active { cursor: default; }
+.steps .list-inline li.active .inner-circle { background-color: #66c93d !important; }
+.steps .list-inline li.first .step-id { margin-left: -100%; }
+.steps .list-inline li.last .step-id { margin-left: 65%; width: max-content; }
