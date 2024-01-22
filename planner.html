@@ -44,7 +44,7 @@
       <h2>Vindt de beste reis voor jou!</h2>
       <div class="destination-card-list">
         <div>
-          <img src="./img/paris.jpg" alt="Parijs">
+          <img src="https://static01.nyt.com/images/2020/06/22/opinion/20gillisWeb/merlin_173526783_192e498a-5699-411c-b1e5-64fa738eec17-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="People talking">
           <div>
             <h3>Parijs</h3>
             <ol>
@@ -57,7 +57,7 @@
         </div>
         
         <div>
-          <img src="./img/paris.jpg" alt="Parijs">
+          <img src="https://i.pinimg.com/564x/81/1d/7a/811d7a7addd49f6cae7b58d9a25f8e62.jpg" alt="Rainy street">
           <div>
             <h3>Parijs</h3>
             <ol>
@@ -132,15 +132,19 @@
   <script>
      document.addEventListener("DOMContentLoaded", function () {
             const urlParams = new URLSearchParams(window.location.search);
-            const destinationParam = urlParams.get("destination");
+            let destination = urlParams.get("destination");
+            console.log(destination)
+            if (!destination) {
+              destination = 'Parijs'
+            }
+            var elementH3s = document.querySelectorAll('h3');
+
+            for (var i = 0; i < elementH3s.length; i++) {
+              elementH3s[i].innerText = destination;
+            }
 
             const destinationElement = document.getElementById("destination");
-
-            if (destinationParam) {
-              destinationElement.textContent = destinationParam;
-            } else {
-              destinationElement.textContent = 'Parijs';
-            }
+            destinationElement.textContent = destination;
         });
   </script>
 </body>
