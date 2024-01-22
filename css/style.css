@@ -10,8 +10,13 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 100vw;
   color: #222;
   font-size: 1em;
   line-height: 1.4;
@@ -112,7 +117,7 @@ textarea {
   clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
-  overflow: hidden;
+  overflow-x: hidden;
   padding: 0;
   position: absolute;
   white-space: nowrap;
@@ -258,7 +263,7 @@ textarea {
 body {
   background-color: var(--background-color);
   margin: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; /* Prevent default body margin/padding and ensure full viewport usage */
 }
 
 header {
@@ -341,4 +346,16 @@ video {
 h1 {
   font-size: 3rem;
   color: var(--primary-color);
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+footer {
+  padding-bottom: 20px;
 }
