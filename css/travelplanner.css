@@ -54,7 +54,8 @@ form div {
 .travel-card-list {
   display: grid;
   gap: 25px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 32% 32% 32%;
+  margin-bottom: 50px;
 }
 
 .travel-card {
@@ -68,5 +69,31 @@ form div {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: black;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.travel-card:hover {
+  color: #ffd0d0;
+}
+
+.travel-card::before {
+  border-radius: 25px;
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5 in this case) to control darkness */
+}
+
+.travel-card p {
+  z-index: 1;
+  color: white;
 }

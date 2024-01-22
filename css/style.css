@@ -351,3 +351,11 @@ h1 {
 * {
   font-family: 'Poppins', sans-serif;
 }
+
+.text-align-center {
+  text-align: center;
+}
+
+footer {
+  padding-bottom: 20px;
+}
