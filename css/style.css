@@ -330,17 +330,18 @@ video {
 }
 
 .container-image {
-  width: 100%;
+  width: 50%;
   height: auto;
   display: block;
   max-width: 70%;
   background-color: white;
-  padding: 100px 50px 100px 50px;
+  padding: 50px 50px 50px 50px;
   border-radius: 50px;
+  margin: 0 auto;
 }
 
 .text {
-  max-width: 400px;
+  max-width: 700px;
 }
 
 h1 {
