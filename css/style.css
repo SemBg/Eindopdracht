@@ -117,7 +117,7 @@ textarea {
   clip: rect(0, 0, 0, 0);
   height: 1px;
   margin: -1px;
-  overflow: hidden;
+  overflow-x: hidden;
   padding: 0;
   position: absolute;
   white-space: nowrap;
@@ -263,7 +263,7 @@ textarea {
 body {
   background-color: var(--background-color);
   margin: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden; /* Prevent default body margin/padding and ensure full viewport usage */
 }
 
 header {
