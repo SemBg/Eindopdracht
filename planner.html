@@ -71,7 +71,7 @@
             </div>
           </div>
         </div>
-        
+
         <div>
           <img src="https://i.pinimg.com/564x/81/1d/7a/811d7a7addd49f6cae7b58d9a25f8e62.jpg" alt="Rainy street">
           <div class="destination-card-inner">
@@ -225,29 +225,6 @@
   </footer>
 
   <script src="js/app.js"></script>
-  <script>
-     document.addEventListener("DOMContentLoaded", function () {
-            const urlParams = new URLSearchParams(window.location.search);
-            let destination = urlParams.get("destination");
-            console.log(destination)
-            if (!destination) {
-              destination = 'Parijs'
-            }
-            let elementH3s = document.querySelectorAll('h3');
-            let destinationElements = document.querySelectorAll('.destination');
-
-            for (let i = 0; i < elementH3s.length; i++) {
-              elementH3s[i].innerText = destination;
-            }
-
-            for (let i = 0; i < destinationElements.length; i++) {
-              destinationElements[i].innerText = destination;
-            }
-
-            const destinationElement = document.getElementById("destination");
-            destinationElement.textContent = destination;
-        });
-  </script>
 </body>
 
 </html>
